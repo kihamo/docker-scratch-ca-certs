@@ -1,3 +1,4 @@
 FROM scratch
 MAINTAINER Kihamo <dev@kihamo.ru>
-COPY ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
+
+ADD http://www.cacert.org/certs/root.crt /etc/ssl/certs/ca-certificates.crt
